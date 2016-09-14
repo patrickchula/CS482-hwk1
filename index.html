@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Cs482-hwk1 by patrickchula</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Cs482-hwk1</h1>
-      <h2 class="project-tagline">By R. Patrick Wannall</h2>
-      <a href="https://github.com/patrickchula/CS482-hwk1" class="btn">View on GitHub</a>
-      <a href="https://github.com/patrickchula/CS482-hwk1/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/patrickchula/CS482-hwk1/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <p>The first thing I did was try to get a relatively handsome picture of my face. I cropped it to be 512x512, then I put it in grayscale. I cropped it outside of OpenCV because I did not want to stretch the image. I had 2 separate Python files. My original file was read using cv2.imread(). Then from that I did my Gaussian Blurs with sigma 1, 2 and 3. Using the cv2.GaussianBlur(). Then I was left with 4 images. Each of those images I found the X and Y gradients. I used the OpenCV function cv2.sobel(). For the X gradient I used 1,0 and for the Y gradient I used the 0,1. Then I had 12 images. The only thing left was to find the magnitude. The OpenCV function I used was cv2.canny() which handles edge detection. I did that on all of the images. The more blurred the lines became, the less edges were left in the final image. </p>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Cs482-hwk1 by patrickchula</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Cs482-hwk1</h1>
+        <h2>By R. Patrick Wannall</h2>
+        <a href="https://github.com/patrickchula/CS482-hwk1" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>The first thing I did was try to get a relatively handsome picture of my face. I cropped it to be 512x512, then I put it in grayscale. I cropped it outside of OpenCV because I did not want to stretch the image. I had 2 separate Python files. My original file was read using cv2.imread(). Then from that I did my Gaussian Blurs with sigma 1, 2 and 3. Using the cv2.GaussianBlur(). Then I was left with 4 images. Each of those images I found the X and Y gradients. I used the OpenCV function cv2.sobel(). For the X gradient I used 1,0 and for the Y gradient I used the 0,1. Then I had 12 images. The only thing left was to find the magnitude. The OpenCV function I used was cv2.canny() which handles edge detection. I did that on all of the images. The more blurred the lines became, the less edges were left in the final image. </p>
 
 <p>Here are the 16 images which I was left with at the end (an extra 17th because I think I look so damned good in the original): </p>
 
 <h1>
 <a id="here-is-the-first-original-image" class="anchor" href="#here-is-the-first-original-image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here is the first original image</h1>
-
-<p><img src="https://github.com/patrickchula/CS482-hwk1/blob/gh-pages/blur0.jpg" alt=""></p>
 
 <h1>
 <a id="grayscale-512x512" class="anchor" href="#grayscale-512x512" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grayscale 512x512</h1>
@@ -87,14 +94,24 @@
 
 <h2>
 <a id="blur-3-edges" class="anchor" href="#blur-3-edges" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blur 3 Edges</h2>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/patrickchula/CS482-hwk1">Cs482-hwk1</a> is maintained by <a href="https://github.com/patrickchula">patrickchula</a>.</span>
+        <aside id="sidebar">
+          <a href="https://github.com/patrickchula/CS482-hwk1/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/patrickchula/CS482-hwk1/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+          <p class="repo-owner"><a href="https://github.com/patrickchula/CS482-hwk1"></a> is maintained by <a href="https://github.com/patrickchula">patrickchula</a>.</p>
 
-    </section>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
   
   </body>
