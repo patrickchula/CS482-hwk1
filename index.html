@@ -30,12 +30,8 @@
         <section id="main-content">
           <p>The first thing I did was try to get a relatively handsome picture of my face. I cropped it to be 512x512, then I put it in grayscale. I cropped it outside of OpenCV because I did not want to stretch the image. I had 2 separate Python files. My original file was read using cv2.imread(). Then from that I did my Gaussian Blurs with sigma 1, 2 and 3. Using the cv2.GaussianBlur(). Then I was left with 4 images. Each of those images I found the X and Y gradients. I used the OpenCV function cv2.sobel(). For the X gradient I used 1,0 and for the Y gradient I used the 0,1. Then I had 12 images. The only thing left was to find the magnitude. The OpenCV function I used was cv2.canny() which handles edge detection. I did that on all of the images. The more blurred the lines became, the less edges were left in the final image. </p>
 
-<p>Here are the 16 images which I was left with at the end (an extra 17th because I think I look so damned good in the original): </p>
+<p>Here are the 16 images which I was left with at the end: </p>
 
-<h1>
-<a id="here-is-the-first-original-image" class="anchor" href="#here-is-the-first-original-image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here is the first original image</h1>
-
-<img src="me2.jpg">
 
 <h1>
 <a id="grayscale-512x512" class="anchor" href="#grayscale-512x512" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grayscale 512x512</h1>
